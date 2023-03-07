@@ -523,14 +523,36 @@ h4 {
     margin-left: 30px;
 }
 
-.read-btn {
-    margin-left: 200px;
-    background-color: #FF6001;
-    color: black;
+/*-------------------------------------------------- Footer --------------------------------------------------*/
+
+footer {
+    height: 261px;
+    width: 1440px;
+    background-color: black;
+    list-style: none;
+}
+
+.Contact a {
+    color: white;
     text-decoration: none;
-    width: 150px;
-    height: 42px;
-    letter-spacing: 0.4px;
-    border-radius: 60px;
-    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Contact li p {
+    font-size: 15px;
+}
+
+.About a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0px 0px 200px 300px
+}
+
+.Follow img {
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
 }
