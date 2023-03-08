@@ -232,33 +232,32 @@ svg:hover {
 
 /*-------------------------------------------------- FEATURED GAMES --------------------------------------------------*/
 
-h3 {
+.line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .line {
+    width: 23.5%;
+    height: 0.5px;
+    background-color: white;
+  }
+  
+  .subtitle {
+    padding: 30px 30px;
     font-size: 20px;
+    font-weight: bold;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    letter-spacing: 0.4px;
-    color: white;
     text-align: center;
-    margin: 40px 0px;
-}
+  }
 
-h3 span {
+  .subtitle span {
     color: #FF6001;
-}
-
-.Line1 hr {
-    float: left;
-    margin-top: 50px;
-    margin-left: 545px;
-    padding: 0 auto;
-}
-
-.Line2 hr {
-    float: right;
-    margin-top: 50px;
-    margin-right: 545px;
-    padding: 0 auto;
-}
+  }
+  
 
 /*-------------------------------------------------- GALLERY1 --------------------------------------------------*/
 
