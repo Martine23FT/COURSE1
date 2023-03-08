@@ -249,13 +249,15 @@ h3 span {
 .Line1 hr {
     float: left;
     margin-top: 50px;
-    margin-left: 543.5px;
+    margin-left: 545px;
+    padding: 0 auto;
 }
 
 .Line2 hr {
     float: right;
     margin-top: 50px;
-    margin-right: 543.5px;
+    margin-right: 545px;
+    padding: 0 auto;
 }
 
 /*-------------------------------------------------- GALLERY1 --------------------------------------------------*/
