@@ -2,6 +2,7 @@
 
 html {
     box-sizing: border-box;
+    background-color: black;
 }
 
 *, *:before, *:after {
@@ -9,82 +10,69 @@ html {
 }
 
 body {
-    background-color: black;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 /*-------------------------------------------------- HEADER --------------------------------------------------*/
 
-.header-wrapper {
+header {
     height: 112px;
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     background-color: black;
-    display: flex;
-    padding: 0px 122px;
 }
 
-.logocontainer {
-    background-color: black;
-    display: grid;
-    width: 400px;
-    height: 100%;
-    padding-bottom: 24px;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .logo {
-    color: #D22CF5;
     font-size: 36px;
-    text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    color: #D22CF5;
+    text-decoration: none;
     line-height: 16px;
     letter-spacing: 0.4px;
-    padding-top: 43px;
+    margin-top: 50px;
 }
 
-.logo span {
+header .logo span {
     color: white;
     font-weight: 400;
 }
 
-.logo p {
+header .logo p {
     font-size: 16px;
-}
-
-h1 {
-    font-size: 16px;
+    color: white;
+    font-family: 'Poppins';
     font-weight: 300;
-    padding: 2px;
-    margin: 10px 0px 10px;
-    letter-spacing: 0.4px;
 }
 
-
-.header-navigation {
-    width: 200px;
-    display: flex;
-    padding: 40px 0px 19px 0px;
-    float: right;
-    background-color: aliceblue;
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
 }
 
-.header-link {
+nav ul li a {
     text-decoration: none;
     color: white;
-    display: inline-block;
-    padding: 20px;
+}
+
+nav ul li a:hover {
+    color: #D22CF5;
+    transition: .3s;
 }
 
 svg {
     height: 25px;
     width: 25px;
-}
-
-svg:hover {
-    transform: scale(1.2);
 }
 
 
@@ -241,6 +229,7 @@ svg:hover {
     align-items: center;
     justify-content: center;
     margin: 20px 0;
+    color: white;
   }
   
   .line {
