@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="/CSS/style.css">
 
@@ -19,7 +21,7 @@
 
     <header>
         <nav class="header-nav">
-            <h1 class="logo">GAME<span>HUB</span><p>The universe of games</p></h1>
+            <a href="index.html" class="logo">GAME<span>HUB</span><p>The universe of games</p></a>
             <ul>
 
                 <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
@@ -41,59 +43,26 @@
         </nav>
     </header>
 
-    <div class="header">
-        <div class="Searchbar">
-            <form action="Search">
-                <input type="text" placeholder="Search for games...">
-                <button></button>
+    <header class="navigation">
+        <div class="search-bar">
+            <form>
+              <input type="text" placeholder="Search for games...">
+              <button type="submit">Go</button>
             </form>
         </div>
 
-        <nav class="navigation">
-            <label for="toggler"><i class="fa fa-bars"></i></label>
-            <input type="checkbox" id="toggler" name="">
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Sell</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </div>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Sell</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
         </nav>
-    </div>
+    </header>
 
-
-
-
-
-<!--
-    <nav class="navbar">
-        <div class="Searchbar">
-            <form action="Search">
-                <input type="text" placeholder="Search for games and more...">
-                <button type="Submit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg>
-                </button>
-            </form>
-        </div>
-
-        <input type="checkbox" id="toggler">
-        <label for="toggler"><i class="fas fa-bars"></i></label>
-        <div class="menu">
-            <ul class="list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Sell</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </div>   
-    </nav>-->
-
+    
 <div class="Background">
     <div class="Textbox">
         <h2>BATMAN CITY</h2>

@@ -55,19 +55,19 @@ header .logo p {
     font-weight: 300;
 }
 
-nav ul li {
+.header-nav ul li {
     list-style-type: none;
     display: inline-block;
     padding: 0px 20px;
     margin-top: 30px;
 }
 
-nav ul li a {
+.header-nav ul li a {
     text-decoration: none;
     color: white;
 }
 
-nav ul li a:hover {
+.header-nav ul li a:hover {
     color: #D22CF5;
     transition: .3s;
 }
@@ -89,7 +89,7 @@ svg {
         transition: .2s;
     }
 
-    nav ul li {
+    .header-nav ul li {
         margin-top: 12px;
         margin-bottom: 0px;
         transition: .2s;
@@ -98,40 +98,98 @@ svg {
 
 /*-------------------------------------------------- NAVIGATIONBAR --------------------------------------------------*/
 
-.header {
-    height: 60px;
-    background-color: #101018;
-    max-width: 1600px;
-}
-
 .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101018;
+    color: white;
+    height: 60px;
+    position: relative;
+    font-size: 18px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .search-bar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    font-weight: 400;
-    font-family: 'Poppins';
-}
-
-.menu {
-    text-decoration: none;
-    color: white;
-}
-
-.list {
+  }
+  
+  .search-bar form {
     display: flex;
-    list-style: none;
-    gap: 25px;
-}
+    align-items: center;
+  }
+  
+  .search-bar input[type="text"] {
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .search-bar button[type="submit"] {
+    border: none;
+    background-color: #FF6001;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
 
+  .nav,
+  #menu-checkbox {
+    display: none;
+  }
+
+  #menu-checkbox:checked ~ .nav {
+    display: block;
+  }
+
+  .nav a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .nav {
+    position: absolute;
+    background: #101018;
+    left: 0px;
+  }
+
+  .nav a:hover {
+    color: #D22CF5;
+    transition: .2s;
+  }
+
+  @media (min-width: 600px) {
+    .nav {
+        display: block;
+        position: static;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .nav a {
+        display: inline-block;
+    }
+  }
 
 /*-------------------------------------------------- HEROPICTURE/TEXT --------------------------------------------------*/
 
 .Background {
     background-image: url(/IMAGES/header.png);
     height: 800px;
-    max-width: 1600px;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,11 +201,12 @@ svg {
     background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.56) 100%);
     height: 270px;
     width: 520px;
-    margin-top: 500px;
-    border-radius: 0px 40px 40px 0px;
+    border-radius: 40px 0px 0px 40px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 450px;
+    margin-left: 1100px;
 }
 
 .Textbox h2 {
