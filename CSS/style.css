@@ -96,6 +96,12 @@ svg {
     }
 }
 
+@media (max-width: 600px) {
+    .header-nav ul li {
+        padding: 0px 8px;
+        margin-top: 35px;
+    }
+}
 /*-------------------------------------------------- NAVIGATIONBAR --------------------------------------------------*/
 
 .navigation {
@@ -107,8 +113,6 @@ svg {
     height: 60px;
     position: relative;
     font-size: 18px;
-    padding-left: 10%;
-    padding-right: 10%;
   }
   
   .search-bar {
@@ -152,7 +156,7 @@ svg {
   .nav a {
     display: block;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 25px;
     font-size: 18px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -162,6 +166,9 @@ svg {
     position: absolute;
     background: #101018;
     left: 0px;
+    text-align: center;
+    top: 54px;
+    padding: 0px 122px;
   }
 
   .nav a:hover {
@@ -183,6 +190,7 @@ svg {
         display: inline-block;
     }
   }
+
 
 /*-------------------------------------------------- HEROPICTURE/TEXT --------------------------------------------------*/
 
