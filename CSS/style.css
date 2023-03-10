@@ -10,9 +10,10 @@ html {
 }
 
 body {
-    max-width: 1440px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 auto;
+    color: white;
 }
 
 /*-------------------------------------------------- HEADER --------------------------------------------------*/
@@ -23,7 +24,7 @@ header {
     background-color: black;
 }
 
-nav {
+.header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,7 +40,7 @@ nav {
     text-decoration: none;
     line-height: 16px;
     letter-spacing: 0.4px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 header .logo span {
@@ -57,7 +58,8 @@ header .logo p {
 nav ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0px 20px;
+    margin-top: 30px;
 }
 
 nav ul li a {
@@ -75,108 +77,121 @@ svg {
     width: 25px;
 }
 
+@media (max-width: 1398px) {
+    header {
+        padding: 18px 3px;
+        transition: .2s;
+        max-height: 112px;
+    }
+
+    .logo {
+        margin-top: 22px;
+        transition: .2s;
+    }
+
+    nav ul li {
+        margin-top: 12px;
+        margin-bottom: 0px;
+        transition: .2s;
+    }
+}
 
 /*-------------------------------------------------- NAVIGATIONBAR --------------------------------------------------*/
 
-
-.navigation-container {
+.nav-container {
     height: 60px;
-    width: 1440px;
-    margin: 0 auto;
-    padding-right: 100px;
     background-color: #101018;
-}
-
-.navigationbar {
-    float: right;
-}
-
-.navigation li {
-    list-style: none;
-    display: inline-block;
-}
-
-.nav-item {
-    display: inline-block;
-}
-
-.nav-link {
-    display: inline-block;
-    padding: 15px 15px;
-    color: white;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    padding-right: 40px;
-}
-
-.nav-link:hover {
-    color: #D22CF5;
+    width: 100%;
 }
 
 .navigation {
-    padding: 0 auto;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/*-------------------------------------------------- SEARCH --------------------------------------------------*/
-
-.Searchbar {
+form {
     background-color: white;
-    width: 490px;
+    width: 400px;
     height: 42px;
-    float: left;
-    margin: 18px 0px 0px 122px;
+    margin: 10px 0px 0px 122px;
 }
 
-.Searchbar input {
+input {
     color: black;
     font-family: 'Poppins';
     font-size: 16px;
     border: none;
     padding-left: 35px;
     margin-top: 7px;
-    margin-left: 10px;
-    width: 390px;
+    width: 320px;
 }
 
-.Searchbar img {
-    height: 23px;
-    width: 23x;
-}
-
-.Searchbar button {
+button {
     border: none;
     background-color: #FF6001;
-    height: 42px;
-    width: 50px;
+    height: 100%;
+    width: 48px;
     float: right;
     cursor: pointer;
 }
+
+.nav {
+    margin-right: 122px;
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 30px;
+    margin: 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 300;
+    padding: 8px;
+}
+
+.nav ul:hover {
+    color: #D22CF5;
+    transition: .3s ease;
+}
+
+.nav ul:hover a:not(:hover) {
+    color: white;
+    opacity: 0.7;
+    filter: blur(0.1px);
+    transition: .3s ease;
+}
+
+
 
 /*-------------------------------------------------- HEROPICTURE/TEXT --------------------------------------------------*/
 
 .Background {
     background-image: url(/IMAGES/header.png);
-    height: 839px;
-    width: 1440px;
-    margin: 0 auto;
-    padding: 0 auto;
-    overflow: initial;
+    height: 800px;
+    max-width: 1600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Textbox {
     background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.56) 100%);
     height: 270px;
-    width: 588px;
-    float: right;
+    width: 520px;
     margin-top: 500px;
-    border-radius: 40px 0px 0px 40px;
-    display: grid;
+    border-radius: 0px 40px 40px 0px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .Textbox h2 {
@@ -186,7 +201,8 @@ svg {
     text-align: center;
     letter-spacing: 5.4px;
     margin-top: 52px;
-    padding: 0 auto;
+    line-height: 1.0;
+    display: block;
 }
 
 .Textbox p {
@@ -195,9 +211,8 @@ svg {
     font-family: 'Montserrat';
     letter-spacing: 0.4px;
     text-align: center;
-    line-height: 0px;
-    margin-top: -20px;
-    padding: 0 auto;
+    display: block;
+    margin-bottom: 30px;
 }
 
 .view-btn {
@@ -205,16 +220,16 @@ svg {
     height: 42px;
     width: 150px;
     border-radius: 60px;
-    margin-left: 220px;
     font-weight: 500;
     letter-spacing: 0.4px;
     font-size: 16px;
     font-family: 'Poppins';
-    margin-bottom: 52px;
     text-decoration: none;
     color: black;
     text-align: center;
     padding-top: 8px;
+    display: block;
+    margin-left: 180px;
 }
 
 .view-btn:hover {
@@ -234,10 +249,10 @@ svg {
   
   .line {
     flex: 1;
-    height: 1px;
+    height: 0.5px;
     margin: 0 10px;
     background-color: white;
-    max-width: 594px;
+    max-width: 100%;
   }
   
   h3 {
@@ -257,15 +272,36 @@ svg {
 
 .Gallery {
     background: linear-gradient(180deg, rgba(16, 16, 24, 0.9) 0%, rgba(16, 16, 24, 0) 100%);
-    width: 1440px;
-    height: 332px;
-    margin: 0 auto;
+    width: 100%;
+    height: 350px;
+    display: grid;
 }
 
-.Gallery-container li {
-    float: left;
-    margin: 40px 140px;
+.Gallery ul {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.Gallery ul li {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.Gallery ul li a {
+    height: 286px;
+    width: 224px;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+}
+
+.Gallery ul li a:hover {
+    transform: scale(1.1);
+    transition: 0.15s;
 }
 
 .Image-container {
@@ -284,23 +320,7 @@ svg {
     background-image: url(/IMAGES/ggg.png);
 }
 
-.Image-container, 
-.Image-container2, 
-.Image-container3, 
-.Image-container4 {
-    height: 286px;
-    width: 224px;
-    background-size: cover;
-    position: absolute;
-    background-position: center;
-}
 
-.Image-container:hover, 
-.Image-container2:hover, 
-.Image-container3:hover, 
-.Image-container4:hover {
-    transform: scale(1.1);
-}
 
 .Text {
     width: 224px;
@@ -308,7 +328,6 @@ svg {
     background-color: #000000;
     opacity: 80%;
     position: absolute;
-    margin-top: 240px;
 }
 
 .Desc {
@@ -320,22 +339,13 @@ svg {
     font-size: 16px;
 }
 
-.Right {
-    float: right;
-    padding: 142px 122px 0px 0px;
-}
-
-.Left {
-    float: left;
-    padding: 80px 0px 0px 122px;
-}
 
 /*-------------------------------------------------- INFORMATIONAL --------------------------------------------------*/
 
 .Info-container {
     margin: 90px auto;
     padding: 0 auto;
-    width: 1440px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -419,7 +429,7 @@ h5 span {
 
 .Gallery2 {
     background: linear-gradient(180deg, rgba(16, 16, 24, 0.9) 0%, rgba(16, 16, 24, 0) 100%);
-    width: 1440px;
+    width: 100%;
     height: 332px;
     margin: 0 auto;
 }
@@ -497,7 +507,7 @@ h5 span {
 .Info-container2 {
     margin: 90px auto;
     padding: 0 auto;
-    width: 1440px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -533,7 +543,7 @@ h4 {
 
 footer {
     height: 261px;
-    width: 1440px;
+    width: 100%;
     background-color: black;
     list-style: none;
 }
