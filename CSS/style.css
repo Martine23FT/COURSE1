@@ -99,7 +99,7 @@ svg {
 @media (max-width: 600px) {
     .header-nav ul li {
         padding: 0px 8px;
-        margin-top: 35px;
+        margin-top: 32px;
     }
 }
 /*-------------------------------------------------- NAVIGATIONBAR --------------------------------------------------*/
@@ -119,6 +119,7 @@ svg {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-left: 10%;
   }
   
   .search-bar form {
@@ -169,11 +170,16 @@ svg {
     text-align: center;
     top: 54px;
     padding: 0px 122px;
+    margin-right: 2%;
   }
 
   .nav a:hover {
     color: #D22CF5;
     transition: .2s;
+  }
+
+  .hamburger-icon {
+    margin-right: 40px;
   }
 
   @media (min-width: 600px) {
