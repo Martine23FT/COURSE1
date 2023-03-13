@@ -1,13 +1,21 @@
 Why does my mobile version get messed up like this? 
+
 How to fix my hamburger-menu? 
 How can I make the icons from fontawesome in the same size? I set the font-size to 20px, but it does not look like they are in the same size. 
+Should we change the navigation-bar on the top to fixed position? If so, how can we do it with the hamburger-menu? 
+I have made a search bar in figma with weird angles, how can you do that in CSS? 
+
 How can I make the hero-picture adjust hight when on mobile-version? Needs to be "shorter". 
 How can I make the textbox on the hero-picture shrink a little bit when adjusting screen size? 
+
 Is it too much to use max-width 1600px? 
-Should we change the navigation-bar on the top to fixed position? If so, how can we do it with the hamburger-menu? 
+
 How can I add arrows to illustrate clicking left and right on my gallery, without ruining it?
 On the description of the games (Desc1), is it possible to make the box itself to opacity 80%, while the text remains opacity 100%?
-I have made a search bar in figma with weird angles, how can you do that in CSS? 
-Should I change the lines on the subtitles? I think the CSS-code on them are a bit off?
 In the gallery. Could I make a horizontal scrollbar for the mobile version? Like a swipe-function?
+
+Can you take a look on the CSS for the subtitles? 
+
 In the section with the PS5 controller, is there an easy and smart way to center the text and button a little bit more? 
+
+In the footer, how can I get the phone and the mail to be aligned to the phone number and email? 

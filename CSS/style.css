@@ -302,11 +302,6 @@ header .logo p {
     justify-content: center;
 }
 
-.Gallery ::-webkit-scrollbar:horizontal {
-    height: 4px;
-    width: auto;
-}
-
 .Desc1 a,
 .Desc2 a,
 .Desc3 a,
@@ -326,10 +321,9 @@ header .logo p {
     width: 232px;
     background-color: #000000;
     opacity: 80%;
-    position: relative;
     text-align: center;
-    margin-top: -46px;
     padding-top: 8px;
+    margin-top: -46px;
 }
 
 .Game1,
@@ -356,6 +350,13 @@ header .logo p {
     transition: .15s;
 }
 
+.Desc1:hover,
+.Desc2:hover,
+.Desc3:hover,
+.Desc4:hover {
+    height: -286px;
+    transition: 1s;
+}
 
 
 
@@ -561,21 +562,68 @@ footer {
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    border-top: 1px solid #101018;
 }
 
-.Contact {
+.Contact,
+.About,
+.Partners,
+.Follow {
     font-family: 'Poppins', sans-serif;
     color: white;
+    margin-top: 40px;
 }
 
-.Contact a {
+.Contact a,
+.About a,
+.Partners a,
+.Follow a {
     text-decoration: none;
     color: white;
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    letter-spacing: 0.4px;
+}
+
+.Contact p,
+.About p,
+.Partners p,
+.Follow p {
+    line-height: 1.0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Follow i {
+    font-size: 28px;
+    display: inline-block;
+    margin: 10px 15px 10px 0px;
+}
+
+.Follow p {
+    text-decoration: underline;
+}
+
+.Follow i:hover {
+    color: #FF6001;
+    transform: rotate(1turn);
+    transition: .3s;
+}
+
+.Contact a:hover,
+.About a:hover,
+.Partners a:hover,
+.Follow a:hover {
+    color: #FF6001;
+    transition: .3s;
+}
+
+.fa-phone,
+.fa-envelope {
+    font-size: 18px;
 }
 
 .Contact p {
-    line-height: 1.0;
+    font-weight: 300;
 }
