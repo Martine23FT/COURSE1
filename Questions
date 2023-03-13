@@ -19,3 +19,9 @@ Can you take a look on the CSS for the subtitles?
 In the section with the PS5 controller, is there an easy and smart way to center the text and button a little bit more? 
 
 In the footer, how can I get the phone and the mail to be aligned to the phone number and email? 
+
+-----------------------------------------------------------------------------------------------------
+SHOP-PAGE
+
+<i class="fa-solid fa-circle"></i> not-selected
+<i class="fa-solid fa-circle-dot"></i> selected
