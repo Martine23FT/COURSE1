@@ -358,8 +358,6 @@ header .logo p {
     transition: 1s;
 }
 
-
-
 /*-------------------------------------------------- INFORMATIONAL --------------------------------------------------*/
 
 .Info-container {
@@ -374,12 +372,14 @@ header .logo p {
 .Info-container img {
     height: 316px;
     width: 558px;
-    padding-right: 70px;
-    box-sizing: unset;
+    margin-right: 100px;
 }
 
 .text-box {
     display: block;
+    border: 1px solid red;
+    align-items: center;
+    margin-left: 100px;
 }
 
 .text-box h4 {
@@ -410,7 +410,7 @@ header .logo p {
     text-decoration: none;
     color: black;
     text-align: center;
-    padding-top: 8px;
+    padding: 8px;
 }
 
 .read-btn:hover {
@@ -492,7 +492,7 @@ header .logo p {
 .Game6,
 .Game7,
 .Game8 {
-    margin: 30px 24px;
+    margin: 30px 40px;
 }
 
 .Game5 a img,
