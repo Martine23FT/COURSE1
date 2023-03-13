@@ -607,8 +607,8 @@ footer {
 
 .Follow i:hover {
     color: #FF6001;
-    transform: rotate(1turn);
-    transition: .3s;
+    transform: rotate(1.0turn);
+    transition: 1s;
 }
 
 .Contact a:hover,
